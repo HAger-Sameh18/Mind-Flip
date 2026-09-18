@@ -77,19 +77,24 @@ main {
 }
 
 #portfolioBtn {
-    display: block;
-    width: fit-content;
-    margin: 18px auto 0;
-    color: #cbd5e1;
+    display: inline-block;
+    margin-top: 18px;
+    padding: 10px 22px;
+    background: transparent;
+    color: #a78bfa;
+    border: 1px solid #8b5cf6;
+    border-radius: 10px;
     text-decoration: none;
     font-size: 15px;
+    font-weight: bold;
     transition: 0.3s;
 }
 
 #portfolioBtn:hover {
-    color: #a78bfa;
+    background: #8b5cf6;
+    color: white;
+    transform: translateY(-2px);
 }
-
 #gameScreen,
 #winScreen {
     display: none;
