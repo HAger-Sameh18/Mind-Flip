@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #111827;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    width: 90%;
+    max-width: 700px;
+    text-align: center;
+}
+
+#startScreen {
+    background: #1f2937;
+    padding: 50px 30px;
+    border-radius: 25px;
+}
+
+#startScreen h1 {
+    font-size: 50px;
+    margin-bottom: 15px;
+}
+
+#startScreen p {
+    color: #cbd5e1;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+#startScreen div {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    margin-bottom: 30px;
+}
+
+#startScreen div button {
+    background: #374151;
+    color: white;
+    border: none;
+    padding: 12px 22px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startScreen div button:hover {
+    transform: translateY(-2px);
+}
+
+#startBtn {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#startBtn:hover {
+    background: #7c3aed;
+    transform: scale(1.05);
+}
+
+#gameScreen,
+#winScreen {
+    display: none;
+}
+
+#gameScreen {
+    background: #1f2937;
+    padding: 30px;
+    border-radius: 25px;
+}
+
+#gameInfo {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+#gameInfo div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#gameInfo span {
+    color: #cbd5e1;
+    font-size: 14px;
+}
+
+#gameInfo strong {
+    font-size: 22px;
+}
+
+#gameBoard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 15px;
+    margin: 25px 0;
+}
+
+.card {
+    height: 110px;
+    background: #8b5cf6;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card.matched {
+    cursor: default;
+    opacity: 0.7;
+}
+
+#gameButtons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+#restartBtn,
+#changeLevelBtn {
+    color: white;
+    border: none;
+    padding: 12px 25px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#restartBtn {
+    background: #8b5cf6;
+}
+
+#restartBtn:hover {
+    background: #7c3aed;
+    transform: scale(1.05);
+}
+
+#changeLevelBtn {
+    background: #374151;
+}
+
+#changeLevelBtn:hover {
+    background: #4b5563;
+    transform: scale(1.05);
+}
+
+#winScreen {
+    background: #1f2937;
+    padding: 45px 30px;
+    border-radius: 25px;
+}
+
+#winScreen h2 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+#winScreen > p {
+    color: #cbd5e1;
+    font-size: 17px;
+    margin-bottom: 25px;
+}
+
+#results {
+    background: #374151;
+    padding: 20px;
+    border-radius: 15px;
+    margin-bottom: 25px;
+}
+
+#results p {
+    margin: 10px 0;
+    color: #cbd5e1;
+}
+
+#results strong {
+    color: white;
+}
+
+#playAgainBtn {
+    background: #8b5cf6;
+    color: white;
+    border: none;
+    padding: 14px 35px;
+    border-radius: 12px;
+    font-size: 17px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#playAgainBtn:hover {
+    background: #7c3aed;
+    transform: scale(1.05);
+}
+
+@media (max-width: 600px) {
+
+    main {
+        width: 95%;
+    }
+
+    #startScreen,
+    #gameScreen,
+    #winScreen {
+        padding: 30px 20px;
+    }
+
+    #startScreen h1 {
+        font-size: 40px;
+    }
+
+    #gameBoard {
+        gap: 10px;
+    }
+
+    .card {
+        height: 80px;
+        font-size: 30px;
+    }
+
+    #gameButtons {
+        flex-direction: column;
+    }
+
+    #restartBtn,
+    #changeLevelBtn {
+        width: 100%;
+    }
+}

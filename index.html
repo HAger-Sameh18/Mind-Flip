@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Flip</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <div id="startScreen">
+
+            <h1>Mind Flip</h1>
+
+            <p>Test your memory and match all the cards!</p>
+
+            <div>
+                <button id="easyBtn">Easy</button>
+                <button id="mediumBtn">Medium</button>
+                <button id="hardBtn">Hard</button>
+            </div>
+
+            <button id="startBtn">Start Game</button>
+
+        </div>
+
+
+        <div id="gameScreen">
+
+            <div id="gameInfo">
+
+                <div>
+                    <span>Time</span>
+                    <strong id="timer">00:00</strong>
+                </div>
+
+                <div>
+                    <span>Moves</span>
+                    <strong id="moves">0</strong>
+                </div>
+
+                <div>
+                    <span>Score</span>
+                    <strong id="score">0</strong>
+                </div>
+
+            </div>
+
+
+            <div id="gameBoard"></div>
+
+
+            <div id="gameButtons">
+
+                <button id="restartBtn">Restart</button>
+
+                <button id="changeLevelBtn">Change Level</button>
+
+            </div>
+
+        </div>
+
+
+        <div id="winScreen">
+
+            <h2>You Win! 🎉</h2>
+
+            <p>Congratulations! You matched all the cards.</p>
+
+            <div id="results">
+
+                <p>Time: <strong id="finalTime">00:00</strong></p>
+
+                <p>Moves: <strong id="finalMoves">0</strong></p>
+
+                <p>Score: <strong id="finalScore">0</strong></p>
+
+            </div>
+
+            <button id="playAgainBtn">Play Again</button>
+
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
